@@ -1,0 +1,11 @@
+ab0b8e438bc3dfe24c200cda5100201d *DESCRIPTION
+21cef1a320f60b1fde3edc25c2c4cd4c *LICENSE
+dd84f0e321677d96dd70c07b29f8f18f *NAMESPACE
+64ec9486c996b34f419e4c4f9dbf1848 *R/DArand.R
+dd1b5eb2518ea9a70af286b5542bf7e9 *R/build_example.R
+91d81d132a64c2daccba66b5b3eb0012 *R/select_prob.R
+9500feb8a24fa1938f65ac0e103ceb01 *man/DArand.Rd
+7dc4b048bee74c791ddfce8c2d599010 *man/build_example.Rd
+14c43522f97bced332ae893bd0261d33 *man/select_prob.Rd
+59717e2e0409cc2264ba5f26f774bab2 *tests/testthat.R
+122f1b0f9cdf5e7a2495f7808005d7b5 *tests/testthat/test-DArand.R
