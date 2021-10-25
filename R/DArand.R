@@ -18,6 +18,7 @@
 #' @param step integer, only used when use.Iter is TRUE to get information on the number of iterations (default 0). Not for use.
 #' @param scales numeric, only used for simulation of oracle purpose (default `NULL`). Not for use.
 #' @param use.Iter logical, applies iterative procedure  (default FALSE)
+#' @param set.seed numeric, set random seed (as is in [`set.seed`][set.seed] function for random number generation ), here default is `NULL`.
 #'
 #' @details The expression table should be organized in such a way that individuals are represented in rows and genes in columns of the `X` array. Furthermore, in the current version, the procedure provides a differential analysis comparing exactly two experimental conditions. Hence, lines from 1 to `n1` should correspond to the first condition and the remaining lines to the second condition.
 #'
@@ -41,8 +42,9 @@
 #' L = build_example(m=500,m1=25,n1=6,fold=20,mu0=100,use.scales=FALSE,nb.size=Inf)
 #' DArand(L$X,L$n1,alpha=0.05)
 #'
-DArand = function(X,n1,k=NULL,alpha=0.05,eta=0.05,beta=0.1,r=1000,with.info=FALSE,clog=1,use.multi.core=TRUE,step=0,scales=NULL, use.Iter=TRUE) {
+DArand = function(X,n1,k=NULL,alpha=0.05,eta=0.05,beta=0.1,r=1000,with.info=FALSE,clog=1,use.multi.core=TRUE,step=0,scales=NULL, use.Iter=TRUE,set.seed=NULL) {
 
+  if(!is.null(set.seed)) set.seed(set.seed)
   if (!(is.data.frame(X) | is.array(X)) ) stop('X must be an array or a data.frame object')
 
   if (n1>=dim(X)[1]) stop('n1 is larger than the number of individuals n.')

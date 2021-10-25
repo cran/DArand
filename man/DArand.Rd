@@ -17,7 +17,8 @@ DArand(
   use.multi.core = TRUE,
   step = 0,
   scales = NULL,
-  use.Iter = TRUE
+  use.Iter = TRUE,
+  set.seed = NULL
 )
 }
 \arguments{
@@ -46,6 +47,8 @@ DArand(
 \item{scales}{numeric, only used for simulation of oracle purpose (default \code{NULL}). Not for use.}
 
 \item{use.Iter}{logical, applies iterative procedure  (default FALSE)}
+
+\item{set.seed}{numeric, set random seed (as is in \code{\link{set.seed}} function for random number generation ), here default is \code{NULL}.}
 }
 \value{
 position vector of the gene expressions found as differentially expressed.
