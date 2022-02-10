@@ -1,6 +1,6 @@
 Package: DArand
 Title: Differential Analysis with Random Reference Genes
-Version: 0.0.1.1
+Version: 0.0.1.2
 Authors@R: c(
     person(given = "Dorota",
            family = "Desaulle",
@@ -20,9 +20,9 @@ Suggests: testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Imports: parallel
 NeedsCompilation: no
-Packaged: 2021-10-19 17:16:16 UTC; Dorota
+Packaged: 2022-02-10 14:19:28 UTC; Dorota
 Author: Dorota Desaulle [aut, cre] (<https://orcid.org/0000-0002-3419-9447>),
   Yves Rozenholc [aut] (<https://orcid.org/0000-0002-3907-5101>)
 Maintainer: Dorota Desaulle <dorota.desaulle@u-paris.fr>
 Repository: CRAN
-Date/Publication: 2021-10-25 11:40:04 UTC
+Date/Publication: 2022-02-10 15:40:02 UTC
